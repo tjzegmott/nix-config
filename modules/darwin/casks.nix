@@ -35,12 +35,4 @@ _:
 
   # Browsers
   "arc"
-
-  # Astronomy
-  "montage"
-  "sextractor"
-
-  # More recent than Nix
-  "neovim"
-  "openstackclient"
 ]
