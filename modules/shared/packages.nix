@@ -3,8 +3,6 @@
 with pkgs; [
   # General packages for development and system management
   atac
-  zsh-completions
-  zsh-fzf-tab
   fzf
   fd
   bat
@@ -16,9 +14,10 @@ with pkgs; [
   coreutils
   openssh
   wget
-  zip
   lazygit
   stow
+  zsh-completions
+  zsh-fzf-tab
 
   # Encryption and security tools
 
@@ -37,7 +36,6 @@ with pkgs; [
   gh
 
   # Media-related packages
-  emacs-all-the-icons-fonts
   ffmpeg
   glow
   imagemagick
@@ -47,9 +45,9 @@ with pkgs; [
   minio-client
 
   # Fonts
-  nerdfonts
-  meslo-lgs-nf
-  hack-font
+  #nerdfonts
+  #meslo-lgs-nf
+  #hack-font
 
   # Node.js development tools
   bun
@@ -65,6 +63,7 @@ with pkgs; [
   tmux
   unrar
   unzip
+  zip
 
   # Time management and task organisation
   timewarrior
