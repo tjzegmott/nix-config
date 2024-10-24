@@ -37,8 +37,10 @@ _:
   "arc"
 
   # Astronomy
-  # "montage"
+  "montage"
+  "sextractor"
 
-  # Temp
-  "neovim" # nix packages are behind
+  # More recent than Nix
+  "neovim"
+  "openstackclient"
 ]

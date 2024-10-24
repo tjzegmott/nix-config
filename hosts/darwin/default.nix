@@ -33,20 +33,8 @@ let user = "tarikzegmott"; in
   system.checks.verifyNixPath = false;
 
   environment.systemPackages = with pkgs; [
-    emacs-unstable
+    # emacs-unstable
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
-
-  launchd.user.agents.emacs.path = [ config.environment.systemPath ];
-  launchd.user.agents.emacs.serviceConfig = {
-    KeepAlive = true;
-    ProgramArguments = [
-      "/bin/sh"
-      "-c"
-      "/bin/wait4path ${pkgs.emacs}/bin/emacs && exec ${pkgs.emacs}/bin/emacs --fg-daemon"
-    ];
-    StandardErrorPath = "/tmp/emacs.err.log";
-    StandardOutPath = "/tmp/emacs.out.log";
-  };
 
   system = {
     stateVersion = 4;
@@ -65,11 +53,11 @@ let user = "tarikzegmott"; in
       };
 
       dock = {
-        autohide = false;
-        show-recents = false;
+        autohide = true;
+        show-recents = true;
         launchanim = true;
         orientation = "bottom";
-        tilesize = 48;
+        tilesize = 32;
       };
 
       finder = {
@@ -78,7 +66,7 @@ let user = "tarikzegmott"; in
 
       trackpad = {
         Clicking = true;
-        TrackpadThreeFingerDrag = true;
+        TrackpadThreeFingerDrag = false;
       };
     };
   };

@@ -3,19 +3,22 @@
 with pkgs; [
   # General packages for development and system management
   atac
-  fzf
-  fd
   bat
-  btop
   bottom
-  htop
-  thefuck
-  ipmitool
+  btop
   coreutils
-  openssh
-  wget
+  direnv
+  eza
+  fd
+  fzf
+  htop
+  ipmitool
   lazygit
+  openssh
   stow
+  thefuck
+  wget
+  zoxide
   zsh-completions
   zsh-fzf-tab
 
@@ -27,7 +30,7 @@ with pkgs; [
   lazydocker
   kubectl
   k9s
-  helm
+  kubernetes-helm
   krew
 
   # Version management
@@ -45,9 +48,9 @@ with pkgs; [
   minio-client
 
   # Fonts
-  #nerdfonts
-  #meslo-lgs-nf
-  #hack-font
+  nerdfonts
+  meslo-lgs-nf
+  hack-font
 
   # Node.js development tools
   bun
@@ -64,14 +67,15 @@ with pkgs; [
   unrar
   unzip
   zip
+  texliveBasic
 
   # Time management and task organisation
-  timewarrior
-  taskwarrior3
+  #timewarrior
+  #taskwarrior3
 
   # Python packages
   python311
-  python311Packages.bugwarrior
+  #python311Packages.bugwarrior
   python311Packages.virtualenv # globally install virtualenv
   poetry
   pre-commit
