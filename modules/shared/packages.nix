@@ -18,6 +18,7 @@ with pkgs; [
   nushell
   oh-my-posh
   tldr
+  terraform
   openssh
   stow
   thefuck
