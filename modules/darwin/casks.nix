@@ -1,12 +1,11 @@
 _:
 
 [
-  # Development Tools
-  "homebrew/cask/docker"
-  "iterm2"
-  "slack-cli"
-  "warp"
-  "zed"
+  # Astronomy Tools
+  "saoimageds9"
+
+  # Browsers
+  "arc"
 
   # Communication Tools
   "discord"
@@ -15,17 +14,17 @@ _:
   "slack"
   "zoom"
 
-  # Utility Tools
-  "lookaway"
-  "rectangle"
-  "jordanbaird-ice"
-  "1password"
-  "1password-cli"
+  # Development Tools
+  "homebrew/cask/docker"
+  "iterm2"
+  "slack-cli"
+  "warp"
+  "zed"
 
   # Entertainment Tools
-  "vlc"
   "diffusionbee"
   "equinox"
+  "vlc"
 
   # Productivity Tools
   "notion-calendar"
@@ -33,6 +32,11 @@ _:
   "obsidian"
   "tex-live-utility"
 
-  # Browsers
-  "arc"
+  # Utility Tools
+  "1password"
+  "1password-cli"
+  "jordanbaird-ice"
+  "lookaway"
+  "nordvpn"
+  "rectangle"
 ]

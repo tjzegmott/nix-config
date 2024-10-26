@@ -3,61 +3,62 @@
 with pkgs; [
   # General packages for development and system management
   atac
-  bat
-  bottom
-  btop
   chezmoi
   coreutils
   direnv
   eza
   fd
   fzf
-  htop
+  ncdu
+  prettyping
   ipmitool
-  lazygit
-  nushell
-  oh-my-posh
-  tldr
-  terraform
   openssh
   stow
   thefuck
+  tldr
   wget
   zoxide
-  zsh-completions
+
+  # Shells and shell extensions
+  nushell
+  oh-my-posh
   zsh-autosuggestions
-  zsh-syntax-highlighting
+  zsh-completions
   zsh-fzf-tab
+  zsh-syntax-highlighting
 
   # Encryption and security tools
 
   # Cloud-related tools and SDKs
   docker
   docker-compose
-  lazydocker
-  kubectl
   k9s
-  kubernetes-helm
   krew
+  kubectl
+  kubernetes-helm
+  lazydocker
+  terraform
 
   # Version management
-  git
   delta
   gh
+  git
+  lazygit
 
   # Media-related packages
   ffmpeg
   glow
-  imagemagick
   gnuplot
+  imagemagick
   lf
   # mc # midnight-commander
   minio-client
 
-  # Fonts
-  nerdfonts
-  meslo-lgs-nf
+  # Fonts and Writing
   hack-font
+  meslo-lgs-nf
+  nerdfonts
+  texliveBasic
 
   # Node.js development tools
   bun
@@ -66,25 +67,28 @@ with pkgs; [
 
   # Text and terminal utilities
   # neovim # nix only at v0.9.5
+  bat
+  bottom
+  btop
   htop
-  yq
   ripgrep
-  tree
   tmux
+  tree
   unrar
   unzip
+  yq
   zip
-  texliveBasic
 
   # Time management and task organisation
   timewarrior
   taskwarrior3
+  vit
 
   # Python packages
-  python311
-  #python311Packages.bugwarrior
-  python311Packages.virtualenv # globally install virtualenv
+  commitizen
   poetry
   pre-commit
-  commitizen
+  python311
+  python311Packages.bugwarrior
+  python311Packages.virtualenv # globally install virtualenv
 ]
