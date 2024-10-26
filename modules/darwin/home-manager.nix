@@ -38,6 +38,7 @@ in
     # This message is safe to ignore. (https://github.com/dustinlyons/nixos-config/issues/83)
     masApps = {
       # "1password" = 1333542190;
+      "WhatsApp Messenger" = 310633997;
     };
   };
 
