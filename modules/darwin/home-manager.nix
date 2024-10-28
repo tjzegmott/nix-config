@@ -21,7 +21,7 @@ in
 
   homebrew = {
     enable = true;
-    taps = ["morantron/tmux-fingers"];
+    # taps = ["morantron/tmux-fingers"];
     casks = pkgs.callPackage ./casks.nix {};
     brews = pkgs.callPackage ./formulae.nix {};
     onActivation.cleanup = "uninstall";
