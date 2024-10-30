@@ -9,6 +9,7 @@ _:
   # "tmux-fingers"
 
   # More recent than Nix
+  "gnuplot"
   "neovim"
   "openstackclient"
 ]

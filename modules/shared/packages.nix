@@ -52,7 +52,7 @@ with pkgs; [
   # Media-related packages
   ffmpeg
   glow
-  gnuplot
+  # gnuplot
   imagemagick
   lf
   # mc # midnight-commander
