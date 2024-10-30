@@ -40,6 +40,9 @@ with pkgs; [
   lazydocker
   terraform
 
+  # Database Tools
+  postgresql_13
+
   # Version management
   delta
   gh
