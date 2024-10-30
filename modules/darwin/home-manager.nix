@@ -67,6 +67,7 @@ in
   local.dock.enable = true;
   local.dock.entries = [
     { path = "/Applications/Arc.app/"; }
+    { path = "/System/Applications/Launchpad.app/"; }
     { path = "/Applications/Slack.app/"; }
     { path = "/Applications/Spark Desktop.app/"; }
     { path = "/Applications/Notion Calendar.app/"; }
