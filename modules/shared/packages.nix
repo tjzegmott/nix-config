@@ -3,6 +3,7 @@
 with pkgs; [
   # General packages for development and system management
   atac
+  atuin
   chezmoi
   coreutils
   direnv
