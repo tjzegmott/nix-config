@@ -9,6 +9,7 @@ let user = "tarikzegmott"; in
   ];
 
   services.nix-daemon.enable = true;
+  # networking.hostName = "YORP";
 
   nix = {
     package = pkgs.nix;

@@ -39,4 +39,5 @@ _:
   "lookaway"
   "nordvpn"
   "rectangle"
+  "tailscale"
 ]

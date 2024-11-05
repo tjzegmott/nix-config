@@ -39,6 +39,9 @@ in
     masApps = {
       # "1password" = 1333542190;
       "WhatsApp Messenger" = 310633997;
+      "Numbers" = 409203825;
+      "Keynote" = 409183694;
+      "Pages" = 409201541;
     };
   };
 
