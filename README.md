@@ -130,6 +130,15 @@ After installation, open a new terminal session to make the `nix` executable ava
 
 ### 3. Pull nix-config
 
+> [!TIP]
+> If you don't want to pull the repository you can replace the `.` with `github:tjzegmott/nix-config`. For example:
+>
+> ``` sh
+> nix --extra-experimental-features 'nix-command flakes' run github:tjzegmott/nix-config#apply
+> ```
+>
+> Which conveniently is the command for Step 5!
+
 ### 4. Make [apps](https://github.com/tjzegmott/nix-config/tree/main/apps) executable
 
 ```sh
