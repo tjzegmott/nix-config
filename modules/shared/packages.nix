@@ -23,8 +23,9 @@ with pkgs; [
   # Shells and shell extensions
   nushell
   oh-my-posh
+  carapace
   zsh-autosuggestions
-  zsh-completions
+  # zsh-completions
   zsh-fzf-tab
   zsh-syntax-highlighting
 

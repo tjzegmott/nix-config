@@ -6,7 +6,7 @@ _:
   "sextractor"
 
   # TMUX plugins
-  # "tmux-fingers"
+  # "moranton/tmux-fingers/tmux-fingers"
 
   # More recent than Nix
   "gnuplot"

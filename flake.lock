@@ -142,6 +142,22 @@
         "type": "github"
       }
     },
+    "morantron-tap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1723625087,
+        "narHash": "sha256-m9QON7diHVEDnnv/alXCJOG+BnfrAKygScrubZZ605I=",
+        "owner": "morantron",
+        "repo": "tmux-fingers",
+        "rev": "b90d7c4b3c285bfa15ef26f35b73aafafafa4419",
+        "type": "github"
+      },
+      "original": {
+        "owner": "morantron",
+        "repo": "tmux-fingers",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": "nixpkgs_2"
@@ -250,6 +266,7 @@
         "homebrew-bundle": "homebrew-bundle",
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
+        "morantron-tap": "morantron-tap",
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs_4"
       }
