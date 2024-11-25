@@ -6,7 +6,8 @@ _:
   "sextractor"
 
   # TMUX plugins
-  # "moranton/tmux-fingers/tmux-fingers"
+  # "morantron/homebrew-tmux-fingers/tmux-fingers"
+  "crystal"  # Needed for tmux-fingers
 
   # More recent than Nix
   "gnuplot"

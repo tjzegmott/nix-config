@@ -38,6 +38,7 @@ _:
   "jordanbaird-ice"
   "lookaway"
   "nordvpn"
+  "nikitabobko/homebrew-tap/aerospace"
   "rectangle"
   "tailscale"
 ]

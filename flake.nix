@@ -27,13 +27,17 @@
       url = "github:morantron/tmux-fingers";
       flake = false;
     };
+    homebrew-nikitabobko = {
+      url = "github:nikitabobko/homebrew-tap";
+      flake = false;
+    };
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, homebrew-morantron, home-manager, nixpkgs, disko } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, homebrew-morantron, homebrew-nikitabobko, home-manager, nixpkgs, disko } @inputs:
     let
       user = "tarikzegmott";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
@@ -96,6 +100,7 @@
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
                   "morantron/homebrew-tmux-fingers" = homebrew-morantron;
+                  "nikitabobko/homebrew-tap" = homebrew-nikitabobko;
                 };
                 mutableTaps = false;
                 autoMigrate = true;

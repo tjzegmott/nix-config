@@ -96,4 +96,11 @@ with pkgs; [
   python311
   python311Packages.bugwarrior
   python311Packages.virtualenv # globally install virtualenv
+  python311Packages.ipython
+  python311Packages.pbr
+
+  # Neovim utils
+  dwt1-shell-color-scripts  # Shell color scripts
+  pokemon-colorscripts-mac  # Draw Pokemon in terminal
+  chafa
 ]
