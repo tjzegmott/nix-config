@@ -31,13 +31,25 @@
       url = "github:nikitabobko/homebrew-tap";
       flake = false;
     };
+    homebrew-dhth = {
+      url = "github:dhth/homebrew-tap";
+      flake = false;
+    };
+    homebrew-scarcalhojr = {
+      url = "github:scarvalhojr/homebrew-tap";
+      flake = false;
+    };
+    homebrew-teamookla = {
+      url = "github:teamookla/homebrew-speedtest";
+      flake = false;
+    };
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, homebrew-morantron, homebrew-nikitabobko, home-manager, nixpkgs, disko } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, homebrew-morantron, homebrew-nikitabobko, homebrew-dhth, homebrew-scarcalhojr, homebrew-teamookla, home-manager, nixpkgs, disko } @inputs:
     let
       user = "tarikzegmott";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
@@ -101,6 +113,9 @@
                   "homebrew/homebrew-bundle" = homebrew-bundle;
                   "morantron/homebrew-tmux-fingers" = homebrew-morantron;
                   "nikitabobko/homebrew-tap" = homebrew-nikitabobko;
+                  "scarvalhojr/homebrew-tap" = homebrew-scarcalhojr;
+                  "teamookla/homebrew-speedtest" = homebrew-teamookla;
+                  "dhth/homebrew-tap" = homebrew-dhth;
                 };
                 mutableTaps = false;
                 autoMigrate = true;
@@ -124,6 +139,21 @@
             };
           }
           ./hosts/nixos
+        ];
+     });
+
+      ubuntuConfigurations = nixpkgs.lib.genAttrs linuxSystems (system: nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = inputs;
+        modules = [
+          home-manager.nixosModules.home-manager {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.${user} = import ./modules/ubuntu/home-manager.nix;
+            };
+          }
+          ./hosts/ubuntu
         ];
      });
   };

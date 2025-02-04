@@ -14,6 +14,7 @@ with pkgs; [
   prettyping
   ipmitool
   openssh
+  sshuttle
   stow
   thefuck
   tldr
@@ -58,6 +59,7 @@ with pkgs; [
   lf
   # mc # midnight-commander
   minio-client
+  papis
 
   # Fonts and Writing
   hack-font

@@ -142,6 +142,22 @@
         "type": "github"
       }
     },
+    "homebrew-dhth": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1736274444,
+        "narHash": "sha256-G0HrVXieiaEQuK2i51++dvdhF5AWu41gwEVJNWn2l+s=",
+        "owner": "dhth",
+        "repo": "homebrew-tap",
+        "rev": "1b18231931afecc9b86adbd8aa4a8c41ceb02b67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dhth",
+        "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
     "homebrew-morantron": {
       "flake": false,
       "locked": {
@@ -171,6 +187,38 @@
       "original": {
         "owner": "nikitabobko",
         "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
+    "homebrew-scarcalhojr": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1673567198,
+        "narHash": "sha256-/vyNdEb3sjmxV90PM8gz0lm7sTr0TwSpCbErC9eiEcA=",
+        "owner": "scarvalhojr",
+        "repo": "homebrew-tap",
+        "rev": "13f91f573c0fa57cadf821994629c21c290555c6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "scarvalhojr",
+        "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
+    "homebrew-teamookla": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660162552,
+        "narHash": "sha256-IaVzg2Nw02RXXz0hmWHP5oq94aAN4Qn6+Y1dC+k+JVM=",
+        "owner": "teamookla",
+        "repo": "homebrew-speedtest",
+        "rev": "1ff487f465bb01c3007c0bc17f1f793244ee2eaa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "teamookla",
+        "repo": "homebrew-speedtest",
         "type": "github"
       }
     },
@@ -282,8 +330,11 @@
         "homebrew-bundle": "homebrew-bundle",
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
+        "homebrew-dhth": "homebrew-dhth",
         "homebrew-morantron": "homebrew-morantron",
         "homebrew-nikitabobko": "homebrew-nikitabobko",
+        "homebrew-scarcalhojr": "homebrew-scarcalhojr",
+        "homebrew-teamookla": "homebrew-teamookla",
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs_4"
       }

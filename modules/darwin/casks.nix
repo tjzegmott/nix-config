@@ -15,8 +15,9 @@ _:
   "zoom"
 
   # Development Tools
+  "ghostty"
+  "raycast"
   "homebrew/cask/docker"
-  "iterm2"
   "slack-cli"
   "warp"
   "zed"
@@ -36,7 +37,6 @@ _:
   "1password"
   "1password-cli"
   "jordanbaird-ice"
-  "lookaway"
   "nordvpn"
   "nikitabobko/homebrew-tap/aerospace"
   "rectangle"
