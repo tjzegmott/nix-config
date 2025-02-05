@@ -74,6 +74,7 @@
       };
       mkLinuxApps = system: {
         "apply" = mkApp "apply" system;
+        "build" = mkApp "build" system;
         "build-switch" = mkApp "build-switch" system;
         "copy-keys" = mkApp "copy-keys" system;
         "create-keys" = mkApp "create-keys" system;
@@ -142,19 +143,16 @@
         ];
      });
 
-      ubuntuConfigurations = nixpkgs.lib.genAttrs linuxSystems (system: nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = inputs;
-        modules = [
-          home-manager.nixosModules.home-manager {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.${user} = import ./modules/ubuntu/home-manager.nix;
-            };
+      homeConfigurations = nixpkgs.lib.genAttrs linuxSystems (system: let
+        user = "tzegmott";
+        in
+          home-manager.lib.homeManagerConfiguration {
+            pkgs = nixpkgs.legacyPackages.${system};
+            extraSpecialArgs = inputs;
+            modules = [
+                ./hosts/linux
+            ];
           }
-          ./hosts/ubuntu
-        ];
-     });
+      );
   };
 }
