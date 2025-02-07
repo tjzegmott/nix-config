@@ -18,5 +18,4 @@ let user = "tzegmott"; in
   };
 
   programs.home-manager.enable = true;
-  programs.zsh.enable = false;
 }
