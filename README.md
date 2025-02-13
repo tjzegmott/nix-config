@@ -94,7 +94,7 @@ This configuration supports both Intel and Apple Silicon Macs.
 
 ### 1. Install dependencies
 
-```sh
+``` sh
 xcode-select --install
 ```
 
@@ -102,8 +102,8 @@ xcode-select --install
 
 I use the nix multi-user [installation script](https://nixos.org/download/).
 
-```sh
-$ sh <(curl -L https://nixos.org/nix/install)
+``` sh
+sh <(curl -L https://nixos.org/nix/install)
 ```
 
 After installation, open a new terminal session to make the `nix` executable available in your `$PATH`. You'll need this in the steps ahead.
@@ -133,7 +133,7 @@ After installation, open a new terminal session to make the `nix` executable ava
 > [!TIP]
 > If you don't want to pull the repository you can replace the `.` with `github:tjzegmott/nix-config`. For example:
 >
-> ```sh
+> ``` sh
 > nix --extra-experimental-features 'nix-command flakes' run github:tjzegmott/nix-config#apply
 > ```
 >
@@ -141,7 +141,7 @@ After installation, open a new terminal session to make the `nix` executable ava
 
 ### 4. Make [apps](https://github.com/tjzegmott/nix-config/tree/main/apps) executable
 
-```sh
+``` sh
 find apps/$(uname -m | sed 's/arm64/aarch64/')-darwin -type f \( -name apply -o -name build -o -name build-switch -o -name create-keys -o -name copy-keys -o -name check-keys \) -exec chmod +x {} \;
 ```
 
@@ -154,7 +154,7 @@ Run this Nix command to replace stub values with your system properties, usernam
 
 > Your email is only used in the `git` configuration.
 
-```sh
+``` sh
 nix run .#apply
 ```
 
@@ -187,7 +187,7 @@ Add anything from your existing `~/.zshrc`, or just review the new configuration
 
 Ensure the build works before deploying the configuration, run:
 
-```sh
+``` sh
 nix run .#build
 ```
 
@@ -219,25 +219,23 @@ nix run .#build
 > [!NOTE] `chezmoi` with a single command
 > You can install your dotfiles on new machine with a single command:
 >
-> ```sh
+> ``` sh
 > chezmoi init --apply https://github.com/$GITHUB_USERNAME/dotfiles.git
 > ```
 >
 > If you use GitHub and your dotfiles repo is called dotfiles then this can be shortened to:
 >
-> ```sh
+> ``` sh
 > chezmoi init --apply $GITHUB_USERNAME
 > ```
-
-````sh
 
 ### 10. Make changes
 
 Finally, alter your system with this command:
 
-```sh
+``` sh
 nix run .#build-switch
-````
+```
 
 > [!CAUTION] > `~/.zshrc` will be replaced with the [`zsh` configuration](https://github.com/tjzegmott/nix-config/blob/main/templates/starter/modules/shared/home-manager.nix#L8) from this repository. Make sure this is what you want.
 
@@ -275,7 +273,7 @@ Download and burn [the minimal ISO image](https://nixos.org/download.html) to a 
 - Forgoing secrets means you must configure apps that depend on keys or passwords yourself.
 - You can always add secrets later.
 
-```sh
+``` sh
 sudo nix run --extra-experimental-features 'nix-command flakes' github:tjzegmott/nix-config#install
 ```
 
@@ -284,7 +282,7 @@ sudo nix run --extra-experimental-features 'nix-command flakes' github:tjzegmott
 - Choose this to add more moving parts for a 100% declarative configuration.
 - This template offers you a place to keep passwords, private keys, etc. _as part of your configuration_.
 
-```sh
+``` sh
 sudo nix run --extra-experimental-features 'nix-command flakes' github:tjzegmott/nix-config#install-with-secrets
 ```
 
@@ -307,7 +305,7 @@ To create a new secret `secret.age`, first [create a `secrets.nix` file](https:/
 
 **secrets.nix**
 
-```nix
+``` nix
 let
   user1 = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL0idNvgGiucWgup/mP78zyC23uFjYq0evcWdjGQUaBH";
   users = [ user1 ];
@@ -360,7 +358,7 @@ Then, I would edit `secrets.nix` to include a line specifying the public key to 
 
 **secrets.nix**
 
-```nix
+``` nix
 let
   dustin = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL0idNvgGiucWgup/mP78zyC23uFjYq0evcWdjGQUaBH";
   users = [ dustin ];
@@ -398,7 +396,7 @@ So, in general, the workflow for managing your environment will look like
 
 For quickly trying a package without installing it, I usually run
 
-```sh
+``` sh
 nix shell nixpkgs#hello
 ```
 
