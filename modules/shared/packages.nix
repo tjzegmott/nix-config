@@ -10,10 +10,13 @@ with pkgs; [
   eza
   fd
   fzf
-  ncdu
-  prettyping
+  goaccess
   ipmitool
+  lazyjournal
+  lazysql
+  ncdu
   openssh
+  prettyping
   sshuttle
   stow
   thefuck
@@ -64,8 +67,9 @@ with pkgs; [
   # Fonts and Writing
   hack-font
   meslo-lgs-nf
-  nerdfonts
-  texliveBasic
+  pngpaste
+  # nerdfonts
+  # texliveBasic # Try to define tex plus deps in darwin/packages.nix
 
   # Node.js development tools
   bun
@@ -95,11 +99,10 @@ with pkgs; [
   commitizen
   poetry
   pre-commit
-  python311
-  python311Packages.bugwarrior
-  python311Packages.virtualenv # globally install virtualenv
-  python311Packages.ipython
-  python311Packages.pbr
+  virtualenv # globally install virtualenv
+  python312
+  # python312Packages.bugwarrior
+  python312Packages.ipython
 
   # Neovim utils
   dwt1-shell-color-scripts  # Shell color scripts

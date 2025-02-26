@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
-let user = "tarikzegmott"; in
+let user = "tzegmott"; in
 
 {
   imports = [
@@ -8,8 +8,7 @@ let user = "tarikzegmott"; in
     ../../modules/shared
   ];
 
-  services.nix-daemon.enable = true;
-  # networking.hostName = "YORP";
+  networking.hostName = "YORP";
 
   nix = {
     package = pkgs.nix;
@@ -20,7 +19,7 @@ let user = "tarikzegmott"; in
     };
 
     gc = {
-      user = "root";
+      # user = "root";
       automatic = true;
       interval = { Weekday = 0; Hour = 2; Minute = 0; };
       options = "--delete-older-than 30d";
@@ -38,7 +37,7 @@ let user = "tarikzegmott"; in
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
   system = {
-    stateVersion = 4;
+    stateVersion = 5;
 
     keyboard = {
       enableKeyMapping = true;
@@ -53,7 +52,7 @@ let user = "tarikzegmott"; in
         KeyRepeat = 2; # Values: 120, 90, 60, 30, 12, 6, 2
         InitialKeyRepeat = 15; # Values: 120, 94, 68, 35, 25, 15
 
-        "com.apple.mouse.tapBehavior" = 1;
+        "com.apple.mouse.tapBehavior" = 0;
         "com.apple.sound.beep.volume" = 0.0;
         "com.apple.sound.beep.feedback" = 0;
       };

@@ -1,7 +1,7 @@
 { config, pkgs, lib, home-manager, ... }:
 
 let
-  user = "tarikzegmott";
+  user = "tzegmott";
   # Define the content of your file as a derivation
   sharedFiles = import ../shared/files.nix { inherit config pkgs; };
   additionalFiles = import ./files.nix { inherit user config pkgs; };
@@ -24,7 +24,11 @@ in
     # taps = ["morantron/tmux-fingers"];
     casks = pkgs.callPackage ./casks.nix {};
     brews = pkgs.callPackage ./formulae.nix {};
-    onActivation.cleanup = "uninstall";
+    onActivation = {
+      autoUpdate = true;
+      cleanup = "uninstall";
+      # update = true;
+    };
 
     # These app IDs are from using the mas CLI app
     # mas = mac app store

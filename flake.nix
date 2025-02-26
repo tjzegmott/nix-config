@@ -20,7 +20,7 @@
       flake = false;
     };
     homebrew-cask = {
-      url = "github:homebrew/homebrew-cask";
+      url = "github:Homebrew/homebrew-cask";
       flake = false;
     };
     homebrew-morantron = {
@@ -51,7 +51,7 @@
 
   outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, homebrew-morantron, homebrew-nikitabobko, homebrew-dhth, homebrew-scarcalhojr, homebrew-teamookla, home-manager, nixpkgs, disko } @inputs:
     let
-      user = "tarikzegmott";
+      user = "tzegmott";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
       darwinSystems = [ "aarch64-darwin" "x86_64-darwin" ];
       forAllSystems = f: nixpkgs.lib.genAttrs (linuxSystems ++ darwinSystems) f;
@@ -96,7 +96,7 @@
       apps = nixpkgs.lib.genAttrs linuxSystems mkLinuxApps // nixpkgs.lib.genAttrs darwinSystems mkDarwinApps;
 
       darwinConfigurations = nixpkgs.lib.genAttrs darwinSystems (system: let
-        user = "tarikzegmott";
+        user = "tzegmott";
       in
         darwin.lib.darwinSystem {
           inherit system;
