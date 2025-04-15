@@ -22,5 +22,10 @@ _:
   "gnuplot"
   "neovim"
   "openstackclient"
+
+  # Other Python Versions
+  "python@3.9"
+  "python@3.10"
+  "python@3.11"
 ]
 
