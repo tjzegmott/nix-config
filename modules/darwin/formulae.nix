@@ -11,6 +11,7 @@ _:
 
   # Dev tools
   "pkl"
+  "grizzly"
 
   # Random
   "scarvalhojr/tap/aoc-cli"

@@ -100,6 +100,6 @@ in
       options = "--sort name --view grid --display stack";
     }
   ];
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
 
 }
