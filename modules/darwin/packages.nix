@@ -11,6 +11,26 @@ let
   };
 in
   shared-packages ++ [
+    # Cloud-related tools and SDKs
+    docker
+    docker-compose
+    k9s
+    krew
+    kubectl
+    kubernetes-helm
+    lazydocker
+    terraform
+
+    # Media-related packages
+    ffmpeg
+    glow
+    # gnuplot
+    imagemagick
+    lf
+    # mc # midnight-commander
+    minio-client
+    papis
+
     dockutil
     tex
   ]

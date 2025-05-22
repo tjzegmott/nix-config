@@ -1,11 +1,14 @@
 { pkgs }:
 
 with pkgs; [
+  # Basic packages
+  #coreutils
+  #openssh
+
   # General packages for development and system management
   atac
   atuin
   chezmoi
-  coreutils
   direnv
   eza
   fd
@@ -15,10 +18,9 @@ with pkgs; [
   lazyjournal
   lazysql
   ncdu
-  openssh
   prettyping
   sshuttle
-  stow
+  systemctl-tui
   thefuck
   tldr
   wget
@@ -35,16 +37,6 @@ with pkgs; [
 
   # Encryption and security tools
 
-  # Cloud-related tools and SDKs
-  docker
-  docker-compose
-  k9s
-  krew
-  kubectl
-  kubernetes-helm
-  lazydocker
-  terraform
-
   # Database Tools
   postgresql_13
 
@@ -53,16 +45,6 @@ with pkgs; [
   gh
   git
   lazygit
-
-  # Media-related packages
-  ffmpeg
-  glow
-  # gnuplot
-  imagemagick
-  lf
-  # mc # midnight-commander
-  minio-client
-  papis
 
   # Fonts and Writing
   hack-font
