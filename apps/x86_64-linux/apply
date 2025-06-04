@@ -78,34 +78,10 @@ if [[ -z "$GIT_NAME" ]]; then
   _prompt "${YELLOW}Please enter your name: ${NC}" GIT_NAME
 fi
 
-select_boot_disk() {
-  local disks
-  local _boot_disk
-
-  _print "${YELLOW}Available disks:${NC}"
-  disks=$(lsblk -nd --output NAME,SIZE | grep -v loop)
-  echo "$disks"
-
-  # Warning message for data deletion
-  _print "${RED}WARNING: All data on the chosen disk will be erased during the installation!${NC}"
-  _prompt "${YELLOW}Please enter the name of your boot disk (e.g., sda, nvme0n1). Do not include the full path ("/dev/"): ${NC}" _boot_disk
-
-  # Confirmation for disk selection to prevent accidental data loss
-  _print "${YELLOW}You have selected $_boot_disk as the boot disk. This will delete everything on this disk. Are you sure? (Y/N): ${NC}"
-  read -r confirmation
-  if [[ "$confirmation" =~ ^[Yy]$ ]]; then
-    export BOOT_DISK=$_boot_disk
-  else
-    _print "${RED}Disk selection cancelled by the user. Please run the script again to select the correct disk.${NC}"
-    exit 1
-  fi
-}
-
 # Set hostname and find primary disk if this is NixOS
 if [[ "$OS" != "Darwin" ]]; then
   _prompt "${YELLOW}Please enter a hostname for the system: ${NC}" HOST_NAME
   export HOST_NAME
-  select_boot_disk
 fi
 
 # Confirmation step
@@ -114,7 +90,7 @@ confirm_details() {
   _print "Email: $GIT_EMAIL"
   _print "Name: $GIT_NAME${NC}"
 
-  if([[ "$OS" != "Darwin" ]]); then
+  if ([[ "$OS" != "Darwin" ]]); then
     _print "${GREEN}Primary interface: $PRIMARY_IFACE"
     _print "Boot disk: $BOOT_DISK"
     _print "Hostname: $HOST_NAME${NC}"
@@ -123,17 +99,17 @@ confirm_details() {
   _prompt "${YELLOW}Is this correct? yes/no: ${NC}" choice
 
   case "$choice" in
-    [Nn] | [Nn][Oo] ) 
-      _print "${RED}Exiting script.${NC}" 
-      exit 1
-      ;;
-    [Yy] | [Yy][Ee][Ss] ) 
-      _print "${GREEN}Continuing...${NC}"
-      ;;
-    * ) 
-      _print "${RED}Invalid option. Exiting script.${NC}" 
-      exit 1
-      ;;
+  [Nn] | [Nn][Oo])
+    _print "${RED}Exiting script.${NC}"
+    exit 1
+    ;;
+  [Yy] | [Yy][Ee][Ss])
+    _print "${GREEN}Continuing...${NC}"
+    ;;
+  *)
+    _print "${RED}Invalid option. Exiting script.${NC}"
+    exit 1
+    ;;
   esac
 }
 
@@ -165,5 +141,5 @@ replace_tokens() {
 export -f replace_tokens
 find . -type f -exec bash -c 'replace_tokens "$0"' {} \;
 
-echo "$USERNAME" > /tmp/username.txt
+echo "$USERNAME" >/tmp/username.txt
 _print "${GREEN}User $USERNAME information applied.${NC}"
