@@ -37,6 +37,7 @@ let user = "tzegmott"; in
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
   system = {
+    primaryUser = "${user}";
     stateVersion = 5;
 
     keyboard = {

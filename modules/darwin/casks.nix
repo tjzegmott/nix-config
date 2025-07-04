@@ -10,7 +10,6 @@ _:
   # Communication Tools
   "discord"
   "notion"
-  "readdle-spark"
   "slack"
   "zoom"
 
@@ -40,5 +39,5 @@ _:
   "nordvpn"
   "nikitabobko/homebrew-tap/aerospace"
   "rectangle"
-  "tailscale"
+  "tailscale-app"
 ]

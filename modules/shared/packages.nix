@@ -21,7 +21,6 @@ with pkgs; [
   prettyping
   sshuttle
   systemctl-tui
-  thefuck
   tldr
   wget
   zoxide
