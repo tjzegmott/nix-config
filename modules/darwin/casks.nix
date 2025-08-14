@@ -16,7 +16,7 @@ _:
   # Development Tools
   "ghostty"
   "raycast"
-  "homebrew/cask/docker"
+  "docker-desktop"
   "slack-cli"
   "warp"
   "zed"
@@ -36,8 +36,8 @@ _:
   "1password"
   "1password-cli"
   "jordanbaird-ice"
-  "nordvpn"
   "nikitabobko/homebrew-tap/aerospace"
+  "nordvpn"
   "rectangle"
   "tailscale-app"
 ]
