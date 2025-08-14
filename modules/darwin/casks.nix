@@ -35,7 +35,7 @@ _:
   # Utility Tools
   "1password"
   "1password-cli"
-  "jordanbaird-ice"
+  "hiddenbar"
   "nikitabobko/homebrew-tap/aerospace"
   "nordvpn"
   "rectangle"
