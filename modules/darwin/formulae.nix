@@ -12,6 +12,7 @@ _:
   # Dev tools
   "pkl"
   "grizzly"
+  "argocd"
 
   # Random
   "scarvalhojr/tap/aoc-cli"
