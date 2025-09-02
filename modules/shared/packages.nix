@@ -38,6 +38,7 @@ with pkgs; [
 
   # Database Tools
   postgresql_13
+  vi-mongo
 
   # Version management
   delta
@@ -54,7 +55,6 @@ with pkgs; [
 
   # Node.js development tools
   bun
-  nodePackages.npm # globally install npm
   nodejs
 
   # Text and terminal utilities
@@ -62,8 +62,10 @@ with pkgs; [
   bat
   bottom
   btop
+  d2
   htop
   ripgrep
+  slides
   tmux
   tree
   unrar
@@ -80,6 +82,7 @@ with pkgs; [
   commitizen
   poetry
   pre-commit
+  uv
   virtualenv # globally install virtualenv
   python313
   # python312Packages.bugwarrior
