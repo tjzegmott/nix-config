@@ -6,6 +6,7 @@ _:
 
   # Browsers
   "arc"
+  "vieb"
 
   # Communication Tools
   "discord"
@@ -14,9 +15,10 @@ _:
   "zoom"
 
   # Development Tools
-  "ghostty"
-  "raycast"
   "docker-desktop"
+  "ghostty"
+  "ollama-app"
+  "raycast"
   "slack-cli"
   "warp"
   "zed"
