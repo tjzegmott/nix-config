@@ -30,6 +30,7 @@ _:
 
   # Productivity Tools
   "notion-calendar"
+  "notion-mail"
   "mongodb-compass"
   "obsidian"
   "tex-live-utility"
