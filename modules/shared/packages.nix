@@ -76,6 +76,7 @@ with pkgs; [
   # Time management and task organisation
   timewarrior
   taskwarrior3
+  taskopen
   vit
 
   # Python packages
