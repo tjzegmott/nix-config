@@ -21,8 +21,6 @@ _:
 
   # More recent than Nix
   "gnuplot"
-  "neovim"
-  "openstackclient"
 
   # Other Python Versions
   "python@3.9"

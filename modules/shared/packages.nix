@@ -18,6 +18,7 @@ with pkgs; [
   lazyjournal
   lazysql
   ncdu
+  openstackclient
   prettyping
   sshuttle
   systemctl-tui
@@ -49,6 +50,7 @@ with pkgs; [
   # Fonts and Writing
   hack-font
   meslo-lgs-nf
+  neovim
   pngpaste
   # nerdfonts
   # texliveBasic # Try to define tex plus deps in darwin/packages.nix
