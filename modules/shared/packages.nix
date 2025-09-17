@@ -23,6 +23,7 @@ with pkgs; [
   sshuttle
   systemctl-tui
   tldr
+  tree-sitter
   wget
   zoxide
 
