@@ -21,6 +21,7 @@ _:
 
   # More recent than Nix
   "gnuplot"
+  "taskopen"
 
   # Other Python Versions
   "python@3.9"
