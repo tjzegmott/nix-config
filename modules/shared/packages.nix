@@ -22,6 +22,7 @@ with pkgs; [
   prettyping
   sshuttle
   systemctl-tui
+  tshark
   tldr
   tree-sitter
   wget
