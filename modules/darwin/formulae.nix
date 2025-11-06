@@ -10,6 +10,7 @@ _:
   "crystal"  # Needed for tmux-fingers
 
   # Dev tools
+  "duf"
   "pkl"
   "grizzly"
   "argocd"
