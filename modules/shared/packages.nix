@@ -87,10 +87,7 @@ with pkgs; [
   poetry
   pre-commit
   uv
-  virtualenv # globally install virtualenv
-  python313
-  # python312Packages.bugwarrior
-  python313Packages.ipython
+  python314
 
   # Neovim utils
   dwt1-shell-color-scripts  # Shell color scripts
