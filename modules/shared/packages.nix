@@ -40,7 +40,7 @@ with pkgs; [
   # Encryption and security tools
 
   # Database Tools
-  postgresql_13
+  postgresql
   vi-mongo
 
   # Version management
