@@ -14,7 +14,6 @@ _:
   "pkl"
   "grizzly"
   "argocd"
-  "stats"
 
   # Random
   "scarvalhojr/tap/aoc-cli"

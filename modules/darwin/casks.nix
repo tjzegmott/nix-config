@@ -20,6 +20,7 @@ _:
   "ollama-app"
   "raycast"
   "slack-cli"
+  "stats"
   "warp"
   "zed"
 
