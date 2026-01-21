@@ -20,6 +20,7 @@ with pkgs; [
   ncdu
   openstackclient
   prettyping
+  snitch
   sshuttle
   systemctl-tui
   tshark
