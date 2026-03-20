@@ -9,6 +9,7 @@ with pkgs; [
   atac
   atuin
   chezmoi
+  devpod
   direnv
   eza
   fd

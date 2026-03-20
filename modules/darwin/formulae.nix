@@ -10,15 +10,23 @@ _:
   "crystal"  # Needed for tmux-fingers
 
   # Dev tools
-  "duf"
-  "pkl"
-  "grizzly"
   "argocd"
+  "duf"
+  "flyctl"
+  "go"
+  "grizzly"
+  "k3d"
+  "k6"
+  "mole"
+  "pkl"
+
 
   # Random
   "scarvalhojr/tap/aoc-cli"
   "dhth/tap/act3"
   "teamookla/speedtest/speedtest"
+  "qpdf"
+  "superfile"
 
   # More recent than Nix
   "gnuplot"
