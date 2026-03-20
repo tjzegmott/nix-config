@@ -60,12 +60,14 @@ let name = "Tarik Zegmott";
   git = {
     enable = false;
     ignores = [ "*.swp" ];
-    userName = name;
-    userEmail = email;
     lfs = {
       enable = true;
     };
-    extraConfig = {
+    settings = {
+      user = {
+        name = name;
+        email = email;
+      };
       init.defaultBranch = "main";
       core = {
 	    editor = "vim";
