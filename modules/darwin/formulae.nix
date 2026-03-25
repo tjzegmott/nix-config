@@ -11,6 +11,7 @@ _:
 
   # Dev tools
   "argocd"
+  "cronboard"
   "duf"
   "flyctl"
   "go"

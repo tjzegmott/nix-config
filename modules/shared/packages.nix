@@ -49,6 +49,7 @@ with pkgs; [
   delta
   gh
   git
+  gitbutler
   lazygit
 
   # Fonts and Writing
@@ -85,8 +86,9 @@ with pkgs; [
 
   # Python packages
   commitizen
+  copier
   poetry
-  pre-commit
+  prek
   uv
   python314
 
