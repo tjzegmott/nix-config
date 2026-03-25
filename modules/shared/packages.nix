@@ -73,7 +73,6 @@ with pkgs; [
   ripgrep
   slides
   tmux
-  tree
   unrar
   unzip
   yq
