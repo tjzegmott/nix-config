@@ -20,6 +20,7 @@ _:
   "k6"
   "mole"
   "pkl"
+  "television"
 
 
   # Random
