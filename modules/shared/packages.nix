@@ -19,7 +19,7 @@ with pkgs; [
   lazyjournal
   lazysql
   ncdu
-  openstackclient
+  # openstackclient  # move to uv tool with deps
   prettyping
   snitch
   sshuttle
