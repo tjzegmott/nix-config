@@ -21,7 +21,6 @@ _:
   "raycast"
   "slack-cli"
   "stats"
-  "warp"
   "zed"
 
   # Entertainment Tools
