@@ -43,13 +43,17 @@
       url = "github:teamookla/homebrew-speedtest";
       flake = false;
     };
+    homebrew-nubjs = {
+      url = "github:nubjs/homebrew-tap";
+      flake = false;
+    };
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, homebrew-morantron, homebrew-nikitabobko, homebrew-dhth, homebrew-scarcalhojr, homebrew-teamookla, home-manager, nixpkgs, disko } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, homebrew-morantron, homebrew-nikitabobko, homebrew-dhth, homebrew-scarcalhojr, homebrew-teamookla, homebrew-nubjs, home-manager, nixpkgs, disko } @inputs:
     let
       user = "tzegmott";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
@@ -117,6 +121,7 @@
                   "scarvalhojr/homebrew-tap" = homebrew-scarcalhojr;
                   "teamookla/homebrew-speedtest" = homebrew-teamookla;
                   "dhth/homebrew-tap" = homebrew-dhth;
+                  "nubjs/homebrew-tap" = homebrew-nubjs;
                 };
                 mutableTaps = false;
                 autoMigrate = true;

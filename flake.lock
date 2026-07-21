@@ -172,6 +172,22 @@
         "type": "github"
       }
     },
+    "homebrew-nubjs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1785014646,
+        "narHash": "sha256-afs83bDng/JtLX2B66GYN88VM9927fyaitzWRpquOQM=",
+        "owner": "nubjs",
+        "repo": "homebrew-tap",
+        "rev": "548ba489cb57e59196ad8289258182bfe4badf0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nubjs",
+        "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
     "homebrew-scarcalhojr": {
       "flake": false,
       "locked": {
@@ -265,6 +281,7 @@
         "homebrew-dhth": "homebrew-dhth",
         "homebrew-morantron": "homebrew-morantron",
         "homebrew-nikitabobko": "homebrew-nikitabobko",
+        "homebrew-nubjs": "homebrew-nubjs",
         "homebrew-scarcalhojr": "homebrew-scarcalhojr",
         "homebrew-teamookla": "homebrew-teamookla",
         "nix-homebrew": "nix-homebrew",
