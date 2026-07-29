@@ -17,7 +17,6 @@ with pkgs; [
   goaccess
   ipmitool
   lazyjournal
-  lazysql
   ncdu
   # openstackclient  # move to uv tool with deps
   prettyping
@@ -25,7 +24,6 @@ with pkgs; [
   sshuttle
   systemctl-tui
   tshark
-  tldr
   tree-sitter
   wget
   zoxide
@@ -43,7 +41,6 @@ with pkgs; [
 
   # Database Tools
   postgresql
-  vi-mongo
 
   # Version management
   delta
@@ -65,7 +62,7 @@ with pkgs; [
   nodejs
 
   # Text and terminal utilities
-  # neovim # nix only at v0.9.5
+  neovim
   bat
   bottom
   btop

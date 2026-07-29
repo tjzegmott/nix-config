@@ -26,8 +26,6 @@ in
     glow
     # gnuplot
     imagemagick
-    lf
-    superfile # Potential alternative to lf
     # mc # midnight-commander
     minio-client
     papis

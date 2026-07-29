@@ -5,7 +5,6 @@ _:
   "saoimageds9"
 
   # Browsers
-  "arc"
   "vieb"
 
   # Communication Tools
@@ -24,13 +23,10 @@ _:
   "zed"
 
   # Entertainment Tools
-  "diffusionbee"
-  "equinox"
   "vlc"
 
   # Productivity Tools
   "notion-calendar"
-  "notion-mail"
   "mongodb-compass"
   "obsidian"
   "tex-live-utility"
