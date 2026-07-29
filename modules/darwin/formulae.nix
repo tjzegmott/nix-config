@@ -21,6 +21,7 @@ _:
   "mole"
   "pkl"
   "television"
+  "nubjs/tap/nub"
 
 
   # Random
