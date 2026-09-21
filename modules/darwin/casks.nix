@@ -37,5 +37,6 @@ _:
   "hiddenbar"
   "nikitabobko/homebrew-tap/aerospace"
   "nordvpn"
+  "secretive"
   "tailscale-app"
 ]
