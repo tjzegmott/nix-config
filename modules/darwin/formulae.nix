@@ -19,7 +19,9 @@ _:
   "k3d"
   "k6"
   "mole"
+  "siderolabs/tap/omnictl"
   "pkl"
+  "siderolabs/tap/talosctl"
   "television"
   "nubjs/tap/nub"
 

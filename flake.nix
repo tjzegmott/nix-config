@@ -27,6 +27,10 @@
       url = "github:morantron/tmux-fingers";
       flake = false;
     };
+    homebrew-siderolabs = {
+      url = "github:siderolabs/homebrew-tap";
+      flake = false;
+    };
     homebrew-nikitabobko = {
       url = "github:nikitabobko/homebrew-tap";
       flake = false;
@@ -53,7 +57,7 @@
     };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, homebrew-morantron, homebrew-nikitabobko, homebrew-dhth, homebrew-scarcalhojr, homebrew-teamookla, homebrew-nubjs, home-manager, nixpkgs, disko } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, homebrew-morantron, homebrew-siderolabs, homebrew-nikitabobko, homebrew-dhth, homebrew-scarcalhojr, homebrew-teamookla, homebrew-nubjs, home-manager, nixpkgs, disko } @inputs:
     let
       user = "tzegmott";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
@@ -117,6 +121,7 @@
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
                   "morantron/homebrew-tmux-fingers" = homebrew-morantron;
+                  "siderolabs/homebrew-tap" = homebrew-siderolabs;
                   "nikitabobko/homebrew-tap" = homebrew-nikitabobko;
                   "scarvalhojr/homebrew-tap" = homebrew-scarcalhojr;
                   "teamookla/homebrew-speedtest" = homebrew-teamookla;

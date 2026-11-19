@@ -204,6 +204,22 @@
         "type": "github"
       }
     },
+    "homebrew-siderolabs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1794257748,
+        "narHash": "sha256-PUfuqPolSPU77KsDOgi9eTW/bzi1jSZuzmuFsb3NwdU=",
+        "owner": "siderolabs",
+        "repo": "homebrew-tap",
+        "rev": "e8aec30053b552c64929ab3f079225d0c91580e9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "siderolabs",
+        "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
     "homebrew-teamookla": {
       "flake": false,
       "locked": {
@@ -280,6 +296,7 @@
         "homebrew-nikitabobko": "homebrew-nikitabobko",
         "homebrew-nubjs": "homebrew-nubjs",
         "homebrew-scarcalhojr": "homebrew-scarcalhojr",
+        "homebrew-siderolabs": "homebrew-siderolabs",
         "homebrew-teamookla": "homebrew-teamookla",
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs_2"
