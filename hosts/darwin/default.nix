@@ -8,6 +8,10 @@ let user = "tzegmott"; in
     ../../modules/shared
   ];
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "minio-client-2025-08-13T08-35-41Z"
+  ];
+
   networking.hostName = "YORP";
 
   nix = {
