@@ -21,7 +21,7 @@ in
 
   homebrew = {
     enable = true;
-    # taps = ["morantron/tmux-fingers"];
+    # taps = [];
     casks = pkgs.callPackage ./casks.nix {};
     brews = pkgs.callPackage ./formulae.nix {};
     onActivation = {
@@ -79,7 +79,7 @@ in
     { path = "/Applications/Arc.app/"; }
     { path = "/System/Applications/Launchpad.app/"; }
     { path = "/Applications/Slack.app/"; }
-    { path = "/Applications/Notion Calendar.app/"; }
+    { path = "/System/Applications/Calendar.app/"; }
     { path = "/System/Applications/Maps.app/"; }
     { path = "/System/Applications/Messages.app/"; }
     { path = "/System/Applications/Facetime.app/"; }

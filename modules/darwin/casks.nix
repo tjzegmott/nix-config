@@ -26,7 +26,6 @@ _:
   "vlc"
 
   # Productivity Tools
-  "notion-calendar"
   "mongodb-compass"
   "obsidian"
   "tex-live-utility"
